@@ -13,13 +13,17 @@
     </js-module>
     <platform name="ios">
     	<config-file target="config.xml" parent="/*">
-    		<feature name="ParsePhonegap">
+    		<feature name="Parse">
     			<param name="ios-package" value="ParsePhonegap"/>
     		</feature>
     	</config-file>
     	<header-file src="src/ios/ParsePhonegap/ParsePhonegap/ParsePhonegap.h"/>
     	<source-file src="src/ios/ParsePhonegap/ParsePhonegap/ParsePhonegap.m"/>
     	<framework src="src/ios/ParsePhonegap/Parse.framework" />
+    	<framework src="QuartzCore.framework"/>
+    	<framework src="StoreKit.framework"/>
+    	<framework src="Security.framework"/>
+    	<framework src="CFNetwork.framework"/>
     </platform>
     <!--<platform name="android">
     </platform>-->

@@ -51,3 +51,5 @@ ParseClient.prototype = {
 		}
 	}
 };
+
+module.exports = new ParseClient();
