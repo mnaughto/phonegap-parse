@@ -12,11 +12,8 @@ var checkParams = function(name, success, error){
 	}
 	return result;
 };
-var ParseClient = function() {
 
-};
-
-ParseClient.prototype = {
+var ParseClient = {
 	connect: function(appId, key, success, error){
 		success = success || NOOP;
 		error = error || NOOP;
@@ -52,4 +49,4 @@ ParseClient.prototype = {
 	}
 };
 
-module.exports = new ParseClient();
+module.exports = ParseClient;
