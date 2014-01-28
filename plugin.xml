@@ -9,7 +9,7 @@
     <license>MIT</license>
     <keywords>cordova,phonegap,notification,parse</keywords>
     <js-module src="www/parseclient.js" name="ParseClient">
-    	<clobbers target="parse"/>
+    	<clobbers target="plugins.parse"/>
     </js-module>
     <platform name="ios">
     	<config-file target="config.xml" parent="/*">
