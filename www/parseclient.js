@@ -25,26 +25,26 @@ var ParseClient = {
 		success = success || NOOP;
 		error = error || NOOP;
 		if(checkParams('subscribe', success, error)){
-			cordova.exec(success, error, 'ParsePhonegap', 'subscribe', [appId, key]);
+			cordova.exec(success, error, 'ParsePhonegap', 'subscribe', [channel]);
 		}
 	},
 	unsubscribe: function(channel, success, error){
 		success = success || NOOP;
 		error = error || NOOP;
 		if(checkParams('unsubscribe', success, error)){
-			cordova.exec(success, error, 'ParsePhonegap', 'unsubscribe', [appId, key]);
+			cordova.exec(success, error, 'ParsePhonegap', 'unsubscribe', [channel]);
 		}
 	},
 	subscribedChannels: function(success, error){
 		error = error || NOOP;
 		if(checkParams('subscribedChannels', success, error)){
-			cordova.exec(success, error, 'ParsePhonegap', 'subscribedChannels', [appId, key]);
+			cordova.exec(success, error, 'ParsePhonegap', 'subscribedChannels', []);
 		}
 	},
 	instanceInfo: function(success, error){
 		error = error || NOOP;
 		if(checkParams('instanceInfo', success, error)){
-			cordova.exec(success, error, 'ParsePhonegap', 'instanceInfo', [appId, key]);
+			cordova.exec(success, error, 'ParsePhonegap', 'instanceInfo', []);
 		}
 	}
 };
